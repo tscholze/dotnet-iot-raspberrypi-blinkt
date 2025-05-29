@@ -1,0 +1,94 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject BlinktService BlinktService
+@using System.Drawing
+
+<h3>LED Control</h3>
+
+<div>
+    <h2>Samples</h2>
+    <button @onclick="SimpleLed">RGB Slider</button>
+    <button @onclick="ShowRainbow">Rainbow Effect</button>
+    <button @onclick="ClearLEDs">Clear All</button>
+</div>
+
+<div>
+    <h2>LED Controls</h2>
+    @for (int i = 0; i < 8; i++)
+    {
+        <div>
+            <div>
+                <div>
+                    <h5>LED @i</h5>
+                    <input type="color" @bind="colors[i]" @bind:event="oninput" @onchange="() => UpdateLED(i)" />
+                    <input type="range" min="0" max="100" @bind="brightness[i]" @bind:event="oninput"
+                        @onchange="() => UpdateLED(i)" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    #region Members
+
+    /// <summary>
+    /// Holds the color values for each LED outside of samples.
+    /// </summary>
+    private string[] colors = Enumerable.Repeat("#000000", 8).ToArray();
+
+    /// <summary>
+    /// Holds the brightness values for each LED (0-100) outside of samples.
+    /// </summary>
+    private int[] brightness = Enumerable.Repeat(20, 8).ToArray();
+
+    #endregion
+
+    #region Button actions
+
+    /// <summary>
+    /// Updates the LED color and brightness based on user input.
+    /// </summary>
+    private void UpdateLED(int index)
+    {
+        // Convert hex color string to RGB values
+        var color = ColorTranslator.FromHtml(colors[index]);
+        float bright = brightness[index] / 100f;
+        BlinktService.SetColor(index, color.R, color.G, color.B, bright);
+    }
+
+    /// <summary>
+    /// Runs a simple RGB example with the Blinkt service.
+    /// </summary>
+    private void SimpleLed()
+    {
+        BlinktService.RunSimpleRgbExample();
+        ClearLEDs();
+    }
+
+    /// <summary>
+    /// Displays a moving rainbow effect using the Blinkt service.
+    /// </summary>
+    private void ShowRainbow()
+    {
+        BlinktService.RunMovingRainbowExample();
+        ClearLEDs();
+    }
+
+    #endregion
+
+    #region Helpers
+
+    /// <summary>
+    /// Clears all LEDs and resets their colors and brightness values in the UI.
+    /// </summary>
+    private void ClearLEDs()
+    {
+        BlinktService.Clear();
+        colors = Enumerable.Repeat("#000000", 8).ToArray();
+        brightness = Enumerable.Repeat(20, 8).ToArray();
+        StateHasChanged();
+    }
+
+    #endregion
+}
