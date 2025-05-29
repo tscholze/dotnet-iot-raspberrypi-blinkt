@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blinky", "Blinky\Blinky.csproj", "{799AE9D9-C0C7-4BF5-A910-9B9BD7031AB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blinky.Web", "Blinky.Web\Blinky.Web.csproj", "{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{799AE9D9-C0C7-4BF5-A910-9B9BD7031AB8}.Release|x64.Build.0 = Release|Any CPU
 		{799AE9D9-C0C7-4BF5-A910-9B9BD7031AB8}.Release|x86.ActiveCfg = Release|Any CPU
 		{799AE9D9-C0C7-4BF5-A910-9B9BD7031AB8}.Release|x86.Build.0 = Release|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Debug|x64.Build.0 = Debug|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Debug|x86.Build.0 = Debug|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Release|x64.ActiveCfg = Release|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Release|x64.Build.0 = Release|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B2F374E-9F12-4CE8-A432-FD7F0A1A43BD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -49,10 +49,12 @@ public class Blinkt : IDisposable
         _controller = new GpioController();
         _controller.OpenPin(DATA_PIN, PinMode.Output);
         _controller.OpenPin(CLOCK_PIN, PinMode.Output);
-        
+
         _pixels = new byte[NUM_LEDS * 4];  // 4 bytes per LED (brightness, blue, green, red)
 
         Clear();
+        SetPixel(0, 255, 0, 0); // Initialize first pixel to off
+        Show(); // Ensure initial state is sent to the LEDs
     }
 
     /// <summary>
