@@ -16,15 +16,12 @@
     <h2>LED Controls</h2>
     @for (int i = 0; i < 8; i++)
     {
+        var ledIndex = i;
         <div>
-            <div>
-                <div>
-                    <h5>LED @i</h5>
-                    <input type="color" @bind="colors[i]" @bind:event="oninput" @onchange="() => UpdateLED(i)" />
-                    <input type="range" min="0" max="100" @bind="brightness[i]" @bind:event="oninput"
-                        @onchange="() => UpdateLED(i)" />
-                </div>
-            </div>
+            <strong>LED @ledIndex</strong>
+            <input type="color" @bind="colors[ledIndex]" @bind:event="oninput" @onchange="() => UpdateLED(ledIndex)" />
+            <input type="range" min="0" max="100" @bind="brightness[ledIndex]" @bind:event="oninput"
+                @onchange="() => UpdateLED(ledIndex)" />
         </div>
     }
 </div>
@@ -35,12 +32,27 @@
     /// <summary>
     /// Holds the color values for each LED outside of samples.
     /// </summary>
-    private string[] colors = Enumerable.Repeat("#000000", 8).ToArray();
+    private string[] colors = Enumerable.Repeat("#FFFFFFFF", 8).ToArray();
 
     /// <summary>
     /// Holds the brightness values for each LED (0-100) outside of samples.
     /// </summary>
     private int[] brightness = Enumerable.Repeat(20, 8).ToArray();
+
+    #endregion
+
+    #region Blazor events
+
+    /// <summary>
+    /// Initializes the component and sets default values for LEDs.
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            UpdateLED(i);
+        }
+    }
 
     #endregion
 
@@ -51,7 +63,6 @@
     /// </summary>
     private void UpdateLED(int index)
     {
-        // Convert hex color string to RGB values
         var color = ColorTranslator.FromHtml(colors[index]);
         float bright = brightness[index] / 100f;
         BlinktService.SetColor(index, color.R, color.G, color.B, bright);
