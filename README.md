@@ -46,28 +46,18 @@ I like to tinker around with Raspberry Pis, I created a couple of educational ap
 - [dotnet-iot-raspberrypi-enviro](https://github.com/tscholze/dotnet-iot-raspberrypi-enviro) A C# controller for the Pimoroini Enviro HAT with BMP, TCS and more sensors
 
 ### Windows 10 IoT Core apps
-- [dotnet-iot-homebear-blinkt](https://github.com/tscholze/dotnet-iot-homebear-blinkt)  
-  Windows 10 IoT Core UWP app that works great with the Pimoroni Blinkt! LED Raspberry Pi HAT.
-- [dotnet-iot-homebear-tilt](https://github.com/tscholze/dotnet-iot-homebear-tilt)  
-  Windows 10 IoT Core UWP app that works great with the Pimoroni Pan and Tilt HAT (PIC16F1503)
-- [dotnet-iot-homebear-rainbow](https://github.com/tscholze/dotnet-iot-homebear-rainbow)  
-  Windows 10 IoT Core UWP app that works great with the Pimoroni RainbowHAT
-- [dotnet-iot-windowscommunity-sample-app](https://github.com/tscholze/dotnet-iot-windowscommunity-sample-app)  
-  An UWP Windows 10 IoT Core sample app for windowscommunity.de
+- [dotnet-iot-homebear-blinkt](https://github.com/tscholze/dotnet-iot-homebear-blinkt) Windows 10 IoT Core UWP app that works great with the Pimoroni Blinkt! LED Raspberry Pi HAT.
+- [dotnet-iot-homebear-tilt](https://github.com/tscholze/dotnet-iot-homebear-tilt) Windows 10 IoT Core UWP app that works great with the Pimoroni Pan and Tilt HAT (PIC16F1503)
+- [dotnet-iot-homebear-rainbow](https://github.com/tscholze/dotnet-iot-homebear-rainbow) Windows 10 IoT Core UWP app that works great with the Pimoroni RainbowHAT
 
 ### Android Things apps
-- [java-android-things-firebase-pager](https://github.com/tscholze/java-android-things-firebase-pager)
-- An Android Things app that displays a Firebase Cloud Messaging notification on a alphanumeric segment control (Rainbow HAT)
-- [java-android-things-tobot](https://github.com/tscholze/java-android-things-tobot)
-- An Android Things an Google Assistant app to controll a Pimoroni STS vehicle by web and voice
+- [java-android-things-firebase-pager](https://github.com/tscholze/java-android-things-firebase-pager) An Android Things app that displays a Firebase Cloud Messaging notification on a alphanumeric segment control (Rainbow HAT)
+- [java-android-things-tobot](https://github.com/tscholze/java-android-things-tobot) An Android Things an Google Assistant app to controll a Pimoroni STS vehicle by web and voice
 
 ### Python scripts
-- [python-enviro-gdocs-logger](https://github.com/tscholze/python-enviro-gdocs-logger)
-- Logs values like room temperature and more to a Google Docs Sheet with graphs
-- [python-enviro-excel-online-logger](https://github.com/tscholze/python-enviro-excel-online-logger)
-- Logs values like room temperature and more to a M365 Excel Sheet with graphs
-- [python-enviro-azure-logger](https://github.com/tscholze/python-enviro-azure-logger)
-- Logs values like room temperature and more to an Azure IoT Hub instance
+- [python-enviro-gdocs-logger](https://github.com/tscholze/python-enviro-gdocs-logger) Logs values like room temperature and more to a Google Docs Sheet with graphs
+- [python-enviro-excel-online-logger](https://github.com/tscholze/python-enviro-excel-online-logger) Logs values like room temperature and more to a M365 Excel Sheet with graphs
+- [python-enviro-azure-logger](https://github.com/tscholze/python-enviro-azure-logger) Logs values like room temperature and more to an Azure IoT Hub instance
 
 ## 🤝 Contributing
 
