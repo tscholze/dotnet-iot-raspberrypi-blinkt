@@ -58,6 +58,10 @@ I like to tinker around with Raspberry Pis, I created a couple of educational ap
 - [python-enviro-excel-online-logger](https://github.com/tscholze/python-enviro-excel-online-logger) Logs values like room temperature and more to a M365 Excel Sheet with graphs
 - [python-enviro-azure-logger](https://github.com/tscholze/python-enviro-azure-logger) Logs values like room temperature and more to an Azure IoT Hub instance
 
+## 📺 Publications
+
+- Youtube: [.NET and Raspberry Pi are a dream team! | Pimoroni Blinkt and GitHub Copilot rocks!](https://youtu.be/btXxbK0Rkfk)
+
 ## 🤝 Contributing
 
 All contributions are welcome! If you have ideas, improvements, or want to share your dazzling Blinkt! creations, feel free to jump in. Let's make this project shine together and learn from each other—especially if you're passionate about C# or IoT!
