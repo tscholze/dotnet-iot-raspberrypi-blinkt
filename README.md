@@ -2,8 +2,6 @@
 
 Welcome to an illuminating journey with your Raspberry Pi! This project brings the vibrant [Pimoroni Blinkt!](https://shop.pimoroni.com/products/blinkt) LED board to life using C# and .NET, transforming your Pi into a colorful playground of lights and coding creativity.
 
----
-
 ## 🚀 What Does It Do?
 
 With this lively .NET IoT implementation, you can:
@@ -14,21 +12,15 @@ With this lively .NET IoT implementation, you can:
 
 Whether you're a hobbyist, a student, or a seasoned developer, this project is the perfect way to learn about hardware control and have some fun with lights!
 
----
-
 ## 🔌 Hardware Requirements
 
 - [Raspberry Pi](https://www.raspberrypi.org/) (any model except Zero)
 - [Pimoroni Blinkt!](https://shop.pimoroni.com/products/blinkt) RGB LED board
 
----
-
 ## 🖥️ Software Requirements
 
 - [.NET SDK](https://learn.microsoft.com/en-us/dotnet/iot/deployment) installed on your Raspberry Pi
 - GPIO interface enabled (`sudo raspi-config`)
-
----
 
 ## 🏃‍♂️ How to Get Started
 
@@ -44,8 +36,6 @@ Whether you're a hobbyist, a student, or a seasoned developer, this project is t
    ```bash
    dotnet run
    ```
-
----
 
 ## ❤️ More IoT projects of mine
 I like to tinker around with Raspberry Pis, I created a couple of educational apps and scripts regarding the Pi and sensors - mostly from Pimoroni.
@@ -79,25 +69,17 @@ I like to tinker around with Raspberry Pis, I created a couple of educational ap
 - [python-enviro-azure-logger](https://github.com/tscholze/python-enviro-azure-logger)
 - Logs values like room temperature and more to an Azure IoT Hub instance
 
----
-
 ## 🤝 Contributing
 
 All contributions are welcome! If you have ideas, improvements, or want to share your dazzling Blinkt! creations, feel free to jump in. Let's make this project shine together and learn from each other—especially if you're passionate about C# or IoT!
-
----
 
 ## 👤 Author
 
 Just me, [Tobi](https://tscholze.github.io).
 
----
-
 ## 📄 License
 
 This project is licensed under the MIT License—see the [LICENSE](LICENSE.md) file for details.  
 Dependencies or assets may be licensed differently.
-
----
 
 Happy hacking and happy blinking! ✨
