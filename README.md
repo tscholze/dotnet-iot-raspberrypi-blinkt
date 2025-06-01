@@ -71,7 +71,7 @@ I like to tinker around with Raspberry Pis, I created a couple of educational ap
 - [java-android-things-tobot](https://github.com/tscholze/java-android-things-tobot)
 - An Android Things an Google Assistant app to controll a Pimoroni STS vehicle by web and voice
 
-## Python scripts
+### Python scripts
 - [python-enviro-gdocs-logger](https://github.com/tscholze/python-enviro-gdocs-logger)
 - Logs values like room temperature and more to a Google Docs Sheet with graphs
 - [python-enviro-excel-online-logger](https://github.com/tscholze/python-enviro-excel-online-logger)
