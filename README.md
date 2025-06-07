@@ -66,6 +66,7 @@ I like to tinker around with Raspberry Pis, I created a couple of educational ap
 ## 📺 Publications
 
 - Youtube: [.NET and Raspberry Pi are a dream team! | Pimoroni Blinkt and GitHub Copilot rocks!](https://youtu.be/btXxbK0Rkfk)
+- Dr. Windows: [Raspberry Pi trifft .NET: Blinkt! zum Leuchten bringen mit dem Copilot](https://www.drwindows.de/news/raspberry-pi-trifft-net-blinkt-zum-leuchten-bringen-mit-dem-copilot)
 
 ## 🤝 Contributing
 
