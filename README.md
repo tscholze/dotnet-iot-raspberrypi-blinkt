@@ -2,6 +2,10 @@
 
 Welcome to an illuminating journey with your Raspberry Pi! This project brings the vibrant [Pimoroni Blinkt!](https://shop.pimoroni.com/products/blinkt) LED board to life using C# and .NET, transforming your Pi into a colorful playground of lights and coding creativity.
 
+<center>
+   <img src="_docs/image.png" height="200" alt="Image of the project" />
+</center>
+
 ## 🚀 What Does It Do?
 
 With this lively .NET IoT implementation, you can:
